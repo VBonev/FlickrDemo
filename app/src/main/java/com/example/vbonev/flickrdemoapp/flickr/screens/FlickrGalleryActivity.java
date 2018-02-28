@@ -41,7 +41,6 @@ public class FlickrGalleryActivity extends FragmentActivity {
             public void onSuccess(int statusCode, Header[] headers,
                                   JSONObject json) {
                 Log.d("DEBUG", "result: " + json.toString());
-                // Add new photos to SQLite
                 try {
                     JSONArray photos = json.getJSONObject("photos").getJSONArray("photo");
                     List<FlickrPhoto> photosList = new ArrayList<>();

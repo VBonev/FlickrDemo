@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".flickr.screens.FlickrLoginActivity">
+        <activity
+            android:name=".flickr.screens.FlickrLoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -24,7 +26,9 @@
                     android:scheme="oauth" />
             </intent-filter>
         </activity>
-        <activity android:name=".twitter.network.TwitterLogin">
+        <activity
+            android:name=".twitter.network.TwitterLogin"
+            android:screenOrientation="portrait">
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -38,11 +42,14 @@
                     tools:ignore="AppLinkUrlError" />
             </intent-filter>
         </activity>
-        <activity android:name=".flickr.screens.FlickrGalleryActivity" />
+        <activity
+            android:name=".flickr.screens.FlickrGalleryActivity"
+            android:configChanges="orientation|screenSize" />
         <activity android:name=".twitter.network.TwitterFeedActivity" />
         <activity
             android:name=".LandingActivity"
             android:label="@string/title_activity_landing"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
