@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".flickr.screens.LoginActivity">
+        <activity android:name=".flickr.screens.FlickrLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -25,11 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".twitter.network.TwitterLogin">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -43,7 +39,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".flickr.screens.FlickrGalleryActivity" />
-        <activity android:name=".twitter.network.TwitterFeedActivity"/>
+        <activity android:name=".twitter.network.TwitterFeedActivity" />
+        <activity
+            android:name=".LandingActivity"
+            android:label="@string/title_activity_landing"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

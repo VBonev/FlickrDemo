@@ -8,7 +8,7 @@ import com.codepath.oauth.OAuthLoginActivity;
 import com.example.vbonev.flickrdemoapp.R;
 import com.example.vbonev.flickrdemoapp.flickr.network.FlickrClient;
 
-public class LoginActivity extends OAuthLoginActivity<FlickrClient>{
+public class FlickrLoginActivity extends OAuthLoginActivity<FlickrClient>{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
