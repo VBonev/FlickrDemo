@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.network;
+package com.example.vbonev.flickrdemoapp.flickr.network;
 
 import android.content.Context;
 import android.util.Log;

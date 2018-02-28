@@ -1,14 +1,14 @@
-package com.example.vbonev.flickrdemoapp.screens;
+package com.example.vbonev.flickrdemoapp.flickr.screens;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 
-import com.example.vbonev.flickrdemoapp.PagerAdapter;
+import com.example.vbonev.flickrdemoapp.flickr.PagerAdapter;
 import com.example.vbonev.flickrdemoapp.R;
-import com.example.vbonev.flickrdemoapp.model.FlickrPhoto;
-import com.example.vbonev.flickrdemoapp.network.FlickrClient;
+import com.example.vbonev.flickrdemoapp.flickr.model.FlickrPhoto;
+import com.example.vbonev.flickrdemoapp.flickr.network.FlickrClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;

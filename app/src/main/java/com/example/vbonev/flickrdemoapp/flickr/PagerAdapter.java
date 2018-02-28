@@ -1,12 +1,11 @@
-package com.example.vbonev.flickrdemoapp;
+package com.example.vbonev.flickrdemoapp.flickr;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.vbonev.flickrdemoapp.model.FlickrPhoto;
-import com.example.vbonev.flickrdemoapp.screens.ImageFragment;
+import com.example.vbonev.flickrdemoapp.flickr.model.FlickrPhoto;
+import com.example.vbonev.flickrdemoapp.flickr.screens.ImageFragment;
 
 import java.util.List;
 
