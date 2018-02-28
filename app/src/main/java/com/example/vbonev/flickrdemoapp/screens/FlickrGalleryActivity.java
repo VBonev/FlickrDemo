@@ -1,6 +1,5 @@
 package com.example.vbonev.flickrdemoapp.screens;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -21,7 +20,7 @@ import java.util.List;
 
 import cz.msebera.android.httpclient.Header;
 
-public class FlickrGallery extends FragmentActivity {
+public class FlickrGalleryActivity extends FragmentActivity {
     private ViewPager galleryPager;
     private FlickrClient flickrClient;
     private PagerAdapter pagerAdapter;

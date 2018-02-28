@@ -28,7 +28,7 @@
                     android:scheme="oauth" />
             </intent-filter>
         </activity>
-        <activity android:name=".screens.FlickrGallery" />
+        <activity android:name=".screens.FlickrGalleryActivity" />
     </application>
 
 </manifest>
