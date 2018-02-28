@@ -11,10 +11,6 @@ public class FlickrPhoto {
 
     private String url;
 
-    public FlickrPhoto() {
-        super();
-    }
-
     public FlickrPhoto(JSONObject object) {
         super();
 

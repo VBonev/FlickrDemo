@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.vbonev.flickrdemoapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,6 +14,18 @@
         android:theme="@style/AppTheme">
         <activity android:name=".flickr.screens.LoginActivity">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cprest"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".twitter.network.TwitterLogin">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,11 +37,13 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="cprest"
-                    android:scheme="oauth" />
+                    android:host="twitterApp"
+                    android:scheme="oauth"
+                    tools:ignore="AppLinkUrlError" />
             </intent-filter>
         </activity>
         <activity android:name=".flickr.screens.FlickrGalleryActivity" />
+        <activity android:name=".twitter.network.TwitterFeedActivity"/>
     </application>
 
 </manifest>
