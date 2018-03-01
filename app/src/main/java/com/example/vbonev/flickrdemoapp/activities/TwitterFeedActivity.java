@@ -1,5 +1,6 @@
 package com.example.vbonev.flickrdemoapp.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,9 +9,8 @@ import android.util.Log;
 
 import com.example.vbonev.flickrdemoapp.R;
 import com.example.vbonev.flickrdemoapp.adapters.TweetAdapter;
-import com.example.vbonev.flickrdemoapp.TwitterClient;
-import com.example.vbonev.flickrdemoapp.model.FlickrPhoto;
-import com.example.vbonev.flickrdemoapp.model.Status;
+import com.example.vbonev.flickrdemoapp.model.TweetModel;
+import com.example.vbonev.flickrdemoapp.network.TwitterClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
@@ -34,7 +34,7 @@ public class TwitterFeedActivity extends AppCompatActivity {
         tweetList = findViewById(R.id.tweet_list);
         tweetList.setHasFixedSize(true);
         tweetList.setLayoutManager(new LinearLayoutManager(this));
-        getTweets("Sofia");
+        getTweets("Grigor Dimitrov");
     }
 
     private void getTweets(String query) {
@@ -45,9 +45,9 @@ public class TwitterFeedActivity extends AppCompatActivity {
                 Log.d("DEBUG", "result: " + json.toString());
                 try {
                     JSONArray tweets = json.getJSONArray("statuses");
-                    List<Status> statuses = new ArrayList();
+                    List<TweetModel> statuses = new ArrayList();
                     for (int i = 0; i < tweets.length(); i++) {
-                        statuses.add(new Status(tweets.getJSONObject(i)));
+                        statuses.add(new TweetModel(tweets.getJSONObject(i)));
                     }
                     tweetList.setAdapter(new TweetAdapter(statuses));
                 } catch (JSONException e) {
@@ -61,5 +61,11 @@ public class TwitterFeedActivity extends AppCompatActivity {
                 super.onFailure(statusCode, headers, responseString, throwable);
             }
         }, query);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(this, LandingActivity.class);
+        startActivity(i);
     }
 }

@@ -9,13 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.vbonev.flickrdemoapp.R;
-import com.example.vbonev.flickrdemoapp.model.Status;
+import com.example.vbonev.flickrdemoapp.model.TweetModel;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
-    private List<Status> statuses;
+    private List<TweetModel> statuses;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -43,7 +43,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         }
     }
 
-    TweetAdapter(List<Status> statuses) {
+    public TweetAdapter(List<TweetModel> statuses) {
         this.statuses = statuses;
     }
 
@@ -60,7 +60,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Status currentStatus = statuses.get(position);
+        TweetModel currentStatus = statuses.get(position);
         holder.tweetScreenName.setText(currentStatus.getScreenName());
         holder.tweetUserName.setText(currentStatus.getUserName());
         holder.tweetText.setText(currentStatus.getText());

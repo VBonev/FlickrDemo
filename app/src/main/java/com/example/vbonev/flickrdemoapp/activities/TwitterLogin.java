@@ -6,10 +6,11 @@ import android.view.View;
 
 import com.codepath.oauth.OAuthLoginActivity;
 import com.example.vbonev.flickrdemoapp.R;
-import com.example.vbonev.flickrdemoapp.TwitterClient;
+import com.example.vbonev.flickrdemoapp.network.TwitterClient;
 
 
 public class TwitterLogin  extends OAuthLoginActivity<TwitterClient> {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
