@@ -9,14 +9,20 @@ import com.example.vbonev.flickrdemoapp.R;
 import com.example.vbonev.flickrdemoapp.network.TwitterClient;
 
 
-public class TwitterLogin  extends OAuthLoginActivity<TwitterClient> {
+public class TwitterLoginActivity extends OAuthLoginActivity<TwitterClient> {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_twitter_login);
-
+        setContentView(R.layout.activity_login);
+        findViewById(R.id.login_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getClient().connect();
+            }
+        });
     }
+
     @Override
     public void onLoginSuccess() {
         Intent i = new Intent(this, TwitterFeedActivity.class);
@@ -28,7 +34,4 @@ public class TwitterLogin  extends OAuthLoginActivity<TwitterClient> {
 
     }
 
-    public void loginTwitter(View view) {
-        getClient().connect();
-    }
 }

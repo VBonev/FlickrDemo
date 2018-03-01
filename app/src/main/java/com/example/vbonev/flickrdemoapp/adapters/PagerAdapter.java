@@ -7,14 +7,15 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import com.example.vbonev.flickrdemoapp.fragments.ImageFragment;
 import com.example.vbonev.flickrdemoapp.model.FlickrPhoto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     private List<FlickrPhoto> photos;
 
-    public PagerAdapter(FragmentManager fm, List<FlickrPhoto> photos) {
+    public PagerAdapter(FragmentManager fm) {
         super(fm);
-        this.photos = photos;
+        this.photos = new ArrayList<>();
     }
 
     @Override
@@ -28,4 +29,8 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         return photos.size();
     }
 
+    public void setPhotos(List<FlickrPhoto> photos) {
+        this.photos = photos;
+        notifyDataSetChanged();
+    }
 }

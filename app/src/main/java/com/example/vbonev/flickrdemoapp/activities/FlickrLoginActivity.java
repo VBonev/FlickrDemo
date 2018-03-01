@@ -12,7 +12,13 @@ public class FlickrLoginActivity extends OAuthLoginActivity<FlickrClient>{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flickr_login);
+        setContentView(R.layout.activity_login);
+        findViewById(R.id.login_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getClient().connect();
+            }
+        });
 
     }
     @Override
@@ -24,9 +30,5 @@ public class FlickrLoginActivity extends OAuthLoginActivity<FlickrClient>{
     @Override
     public void onLoginFailure(Exception e) {
 
-    }
-
-    public void flickrLogin(View view) {
-        getClient().connect();
     }
 }

@@ -1,6 +1,7 @@
 package com.example.vbonev.flickrdemoapp.network;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.codepath.oauth.OAuthBaseClient;
 import com.github.scribejava.apis.TwitterApi;
@@ -19,11 +20,13 @@ public class TwitterClient extends OAuthBaseClient {
         super(context, REST_API_INSTANCE, REST_URL, REST_CONSUMER_KEY, REST_CONSUMER_SECRET, REST_CALLBACK_URL);
     }
 
-    public void searchQueryTweets(AsyncHttpResponseHandler handler, String query) {
-        String url = getApiUrl("search/tweets.json");
+    public void searchQueryTweets(AsyncHttpResponseHandler handler, String query,int count) {
+        String apiUrl = getApiUrl("search/tweets.json");
         RequestParams params = new RequestParams();
         params.put("q", query);
-        client.get(url, params, handler);
+        params.put("count", count);
+        Log.d("DEBUG", "Sending API call to " + apiUrl);
+        client.get(apiUrl, params, handler);
     }
 
 }

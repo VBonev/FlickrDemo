@@ -3,7 +3,7 @@ package com.example.vbonev.flickrdemoapp.model;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class TweetModel {
+public class TweetStatus {
 
     private String id;
     private String text;
@@ -13,10 +13,7 @@ public class TweetModel {
     private String screenName;
     private String userAvatar;
 
-    private int favouriteCount;
-    private int replyCount;
-
-    public TweetModel(JSONObject object) {
+    public TweetStatus(JSONObject object) {
         super();
 
         try {
@@ -27,9 +24,6 @@ public class TweetModel {
             this.userName = object.getJSONObject("user").getString("name");
             this.screenName = object.getJSONObject("user").getString("screen_name");
             this.userAvatar = object.getJSONObject("user").getString("profile_image_url_https");
-
-            this.replyCount = object.getInt("reply_count");
-            this.favouriteCount = object.getInt("favorite_count");
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -56,11 +50,4 @@ public class TweetModel {
         return screenName;
     }
 
-    public int getFavouriteCount() {
-        return favouriteCount;
-    }
-
-    public int getReplyCount() {
-        return replyCount;
-    }
 }

@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.TwitterLogin"
+            android:name=".activities.TwitterLoginActivity"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -56,8 +56,7 @@
         <activity
             android:name=".activities.FlickrGalleryActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".activities.TwitterFeedActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activities.TwitterFeedActivity" />
 
     </application>
 

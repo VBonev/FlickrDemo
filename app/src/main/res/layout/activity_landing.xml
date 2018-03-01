@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:onClick="flickrFlow"
-        android:text="FLICKR" />
+        android:layout_width="@dimen/landing_icon_size"
+        android:layout_height="@dimen/landing_icon_size"
+        android:background="@drawable/flickr"
+        android:onClick="flickrFlow" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:onClick="twitterFlow"
-        android:text="TWITTER" />
+        android:layout_width="@dimen/landing_icon_size"
+        android:layout_height="@dimen/landing_icon_size"
+        android:background="@drawable/twitter"
+        android:onClick="twitterFlow" />
 
 
 </LinearLayout>

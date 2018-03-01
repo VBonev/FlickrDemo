@@ -6,9 +6,7 @@ import org.json.JSONObject;
 public class FlickrPhoto {
 
     private String uid;
-
     private String name;
-
     private String url;
 
     public FlickrPhoto(JSONObject object) {

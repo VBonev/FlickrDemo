@@ -23,7 +23,7 @@ public class LandingActivity extends AppCompatActivity {
 
 
     public void twitterFlow(View view) {
-        Intent i = new Intent(this, TwitterLogin.class);
+        Intent i = new Intent(this, TwitterLoginActivity.class);
         startActivity(i);
     }
 
