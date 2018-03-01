@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.twitter.network;
+package com.example.vbonev.flickrdemoapp.network;
 
 import android.content.Context;
 
@@ -9,11 +9,11 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
 public class TwitterClient extends OAuthBaseClient {
-    public static final BaseApi REST_API_INSTANCE = TwitterApi.instance();
-    public static final String REST_URL = "https://api.twitter.com/1.1/";
-    public static final String REST_CONSUMER_KEY = "hgNUiFIAQAkidkMOhTFcULjK9";
-    public static final String REST_CONSUMER_SECRET = "Ttwk6aqw5m0XhaOrekJ1f68PJPGsjvY21jOk3o6UiwhBDe0l0X";
-    public static final String REST_CALLBACK_URL = "oauth://twitterApp";
+    private static final BaseApi REST_API_INSTANCE = TwitterApi.instance();
+    private static final String REST_URL = "https://api.twitter.com/1.1/";
+    private static final String REST_CONSUMER_KEY = "hgNUiFIAQAkidkMOhTFcULjK9";
+    private static final String REST_CONSUMER_SECRET = "Ttwk6aqw5m0XhaOrekJ1f68PJPGsjvY21jOk3o6UiwhBDe0l0X";
+    private static final String REST_CALLBACK_URL = "oauth://twitterApp";
 
     public TwitterClient(Context context) {
         super(context, REST_API_INSTANCE, REST_URL, REST_CONSUMER_KEY, REST_CONSUMER_SECRET, REST_CALLBACK_URL);

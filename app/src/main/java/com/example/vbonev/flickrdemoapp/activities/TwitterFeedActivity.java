@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.twitter.network;
+package com.example.vbonev.flickrdemoapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,9 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.example.vbonev.flickrdemoapp.R;
-import com.example.vbonev.flickrdemoapp.flickr.PagerAdapter;
-import com.example.vbonev.flickrdemoapp.flickr.model.FlickrPhoto;
-import com.example.vbonev.flickrdemoapp.twitter.network.model.Status;
+import com.example.vbonev.flickrdemoapp.adapters.TweetAdapter;
+import com.example.vbonev.flickrdemoapp.TwitterClient;
+import com.example.vbonev.flickrdemoapp.model.FlickrPhoto;
+import com.example.vbonev.flickrdemoapp.model.Status;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;

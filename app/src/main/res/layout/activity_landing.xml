@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-
-    <Button
+    <FrameLayout
+        android:id="@+id/flickr_login_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:onClick="flickrFlow"
-        android:text="FLICKR" />
+        android:layout_height="match_parent" />
 
-    <Button
+    <FrameLayout
+        android:id="@+id/twitter_login_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:onClick="twitterFlow"
-        android:text="TWITTER" />
-
-
+        android:layout_height="match_parent" />
 </LinearLayout>

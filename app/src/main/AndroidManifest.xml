@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".flickr.screens.FlickrLoginActivity"
+            android:name=".screensivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".twitter.network.TwitterLogin"
+            android:name=".activities.TwitterLogin"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -43,11 +43,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".flickr.screens.FlickrGalleryActivity"
+            android:name=".activities.FlickrGalleryActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".twitter.network.TwitterFeedActivity" />
+        <activity android:name=".activities.TwitterFeedActivity" />
         <activity
-            android:name=".LandingActivity"
+            android:name=".activities.LandingActivity"
             android:label="@string/title_activity_landing"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

@@ -26,4 +26,5 @@ dependencies {
     compile 'com.codepath.libraries:android-oauth-handler:1.2.5'
     testImplementation 'junit:junit:4.12'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:27.1.0'
 }

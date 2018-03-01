@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.flickr.model;
+package com.example.vbonev.flickrdemoapp.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;

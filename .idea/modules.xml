@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FlickrDemo.iml" filepath="$PROJECT_DIR$/.idea/FlickrDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlickrDemo.iml" filepath="$PROJECT_DIR$/FlickrDemo.iml" />
       <module fileurl="file://C:\Users\Valio\Documents\FlickrDemo\FlickrDemo.iml" filepath="C:\Users\Valio\Documents\FlickrDemo\FlickrDemo.iml" />
+      <module fileurl="file://C:\Users\vbonev\Documents\flickr\FlickrDemo\.idea\FlickrDemo.iml" filepath="C:\Users\vbonev\Documents\flickr\FlickrDemo\.idea\FlickrDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\Valio\Documents\FlickrDemo\app\app.iml" filepath="C:\Users\Valio\Documents\FlickrDemo\app\app.iml" />
     </modules>

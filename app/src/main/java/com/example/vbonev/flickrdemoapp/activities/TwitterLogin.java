@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.twitter.network;
+package com.example.vbonev.flickrdemoapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.codepath.oauth.OAuthLoginActivity;
 import com.example.vbonev.flickrdemoapp.R;
+import com.example.vbonev.flickrdemoapp.TwitterClient;
 
 
 public class TwitterLogin  extends OAuthLoginActivity<TwitterClient> {

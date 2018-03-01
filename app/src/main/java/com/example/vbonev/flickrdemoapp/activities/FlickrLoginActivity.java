@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.flickr.screens;
+package com.example.vbonev.flickrdemoapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.codepath.oauth.OAuthLoginActivity;
 import com.example.vbonev.flickrdemoapp.R;
-import com.example.vbonev.flickrdemoapp.flickr.network.FlickrClient;
+import com.example.vbonev.flickrdemoapp.network.FlickrClient;
 
 public class FlickrLoginActivity extends OAuthLoginActivity<FlickrClient>{
     @Override
@@ -26,7 +26,7 @@ public class FlickrLoginActivity extends OAuthLoginActivity<FlickrClient>{
 
     }
 
-    public void login(View view) {
+    public void flickrLogin(View view) {
         getClient().connect();
     }
 }

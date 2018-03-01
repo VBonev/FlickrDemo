@@ -1,13 +1,11 @@
-package com.example.vbonev.flickrdemoapp;
+package com.example.vbonev.flickrdemoapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.example.vbonev.flickrdemoapp.flickr.screens.FlickrLoginActivity;
-import com.example.vbonev.flickrdemoapp.twitter.network.TwitterLogin;
+import com.example.vbonev.flickrdemoapp.R;
 
 public class LandingActivity extends AppCompatActivity {
 

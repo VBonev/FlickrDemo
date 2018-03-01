@@ -2,14 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".flickr.screens.FlickrLoginActivity" >
+    tools:context=".screensivity" >
 
     <Button
         android:layout_width="match_parent"
+        android:id="@+id/flickr_login_button"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        android:onClick="login"
+        android:onClick="flickrLogin"
         android:text="LOGIN" />
 
 </RelativeLayout>
