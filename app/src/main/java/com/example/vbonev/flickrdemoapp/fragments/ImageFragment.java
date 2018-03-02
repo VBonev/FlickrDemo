@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.flickr.screens;
+package com.example.vbonev.flickrdemoapp.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

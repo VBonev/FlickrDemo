@@ -1,4 +1,4 @@
-package com.example.vbonev.flickrdemoapp.flickr.model;
+package com.example.vbonev.flickrdemoapp.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -6,14 +6,8 @@ import org.json.JSONObject;
 public class FlickrPhoto {
 
     private String uid;
-
     private String name;
-
     private String url;
-
-    public FlickrPhoto() {
-        super();
-    }
 
     public FlickrPhoto(JSONObject object) {
         super();

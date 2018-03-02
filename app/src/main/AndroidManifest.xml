@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.vbonev.flickrdemoapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,12 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".flickr.screens.LoginActivity">
+        <activity
+            android:name=".activities.LandingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FlickrLoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -28,7 +36,27 @@
                     android:scheme="oauth" />
             </intent-filter>
         </activity>
-        <activity android:name=".flickr.screens.FlickrGalleryActivity" />
+        <activity
+            android:name=".activities.TwitterLoginActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="twitterApp"
+                    android:scheme="oauth"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FlickrGalleryActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activities.TwitterFeedActivity" />
+
     </application>
 
 </manifest>
