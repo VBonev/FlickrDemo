@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">FlickrDemoApp</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_landing">LandingActivity</string>
     <string name="tweet_search_title">Search Tweets</string>
     <string name="verify_your_account">Verify your Account</string>
+    <string name="landing_title">Choose your flow</string>
 </resources>
