@@ -3,9 +3,9 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:minHeight="140dp"
-    card_view:cardBackgroundColor="#b7def4"
+    android:layout_margin="@dimen/tweet_card_margin"
+    android:minHeight="@dimen/tweet_height"
+    card_view:cardBackgroundColor="@color/tweet_card_background"
     card_view:cardCornerRadius="4dp">
 
     <RelativeLayout
@@ -39,7 +39,7 @@
             android:layout_toEndOf="@+id/tweet_avatar"
             android:layout_toRightOf="@+id/tweet_avatar"
             android:gravity="center_vertical"
-            android:textColor="#3972ce"
+            android:textColor="@color/tweet_user_text"
             android:textSize="12sp" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tweet_text"
-            android:textColor="#3972ce" />
+            android:textColor="@color/tweet_date_text" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>
