@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FlickrDemoApp</string>
+    <string name="app_name">Social App</string>
 
     <string name="title_activity_landing">LandingActivity</string>
     <string name="tweet_search_title">Search Tweets</string>
